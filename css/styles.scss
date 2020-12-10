@@ -1,0 +1,121 @@
+header,
+main,
+footer {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+}
+
+iframe {
+    padding-top: 25px;
+}
+.wip {
+    display: none !important;
+}
+
+section {
+    padding-bottom: 100px;
+    color: #ffffff;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.image-background {
+        background-image: url(../images/backgrounds/consulting-benefits.jpg);
+    }
+    &.consulting-image-background {
+        background-image: url(../images/backgrounds/consulting-about.jpg);
+    }
+    &.video-background {
+        background: rgba(0, 0, 0, 0.75)
+            url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+        max-width: 100%;
+        color: #ffffff;
+        border-bottom: 4px solid #cc4141;
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    &.white-background {
+        background: #ffffff;
+        color: #333;
+    }
+    &.offwhite-background {
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .benefit {
+            text-align: left;
+            width: 30%;
+            padding: 45px 55px;
+            @media (max-width: 768px) {
+                width: 80%;
+                margin: 0 10%;
+                padding: 45px 0;
+            }
+            img {
+                max-width: 140px;
+                float: left;
+            }
+            p {
+                padding-top: 0px;
+            }
+        }
+    }
+
+    button {
+        background: #cc4141;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 30px;
+        margin-top: 50px;
+    }
+}
+
+footer {
+    section {
+        background: #fff;
+        color: #333;
+        padding: 50px 0;
+        font-size: 1rem;
+        font-family: "Segoe UI", SegoeUI, "Segoe WP", Tahoma, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a:hover {
+            color: #0078d7;
+        }
+
+        img {
+            width: 32px;
+            padding-right: 10px;
+        }
+    }
+}

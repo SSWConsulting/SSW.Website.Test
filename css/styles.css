@@ -1,0 +1,154 @@
+header,
+main,
+footer {
+  width: 100%;
+  padding: 0 0;
+  margin: 0 auto;
+}
+
+iframe {
+  padding-top: 25px;
+}
+
+.wip {
+  display: none !important;
+}
+
+section {
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.image-background {
+  background-image: url(../images/backgrounds/consulting-benefits.jpg);
+}
+
+section.consulting-image-background {
+  background-image: url(../images/backgrounds/consulting-about.jpg);
+}
+
+section.video-background {
+  background: rgba(0, 0, 0, 0.75) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  max-width: 100%;
+  color: #ffffff;
+  border-bottom: 4px solid #cc4141;
+}
+
+section.video-background video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+section.white-background {
+  background: #ffffff;
+  color: #333;
+}
+
+section.offwhite-background {
+  background: #f5f5f5;
+  color: #333;
+}
+
+section .benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .benefits .benefit {
+  text-align: left;
+  width: 30%;
+  padding: 45px 55px;
+}
+
+@media (max-width: 768px) {
+  section .benefits .benefit {
+    width: 80%;
+    margin: 0 10%;
+    padding: 45px 0;
+  }
+}
+
+section .benefits .benefit img {
+  max-width: 140px;
+  float: left;
+}
+
+section .benefits .benefit p {
+  padding-top: 0px;
+}
+
+section button {
+  background: #cc4141;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+footer section {
+  background: #fff;
+  color: #333;
+  padding: 50px 0;
+  font-size: 1rem;
+  font-family: "Segoe UI", SegoeUI, "Segoe WP", Tahoma, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer section a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer section a:hover {
+  color: #0078d7;
+}
+
+footer section img {
+  width: 32px;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
